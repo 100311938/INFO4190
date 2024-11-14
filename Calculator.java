@@ -18,6 +18,8 @@ public class Calculator {
             System.out.println("Invalid number input.");
         }
 
+
+	// This is a comment
         System.out.print("Enter the second number: ");
         double num2 = 0;
         try {
