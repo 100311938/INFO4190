@@ -11,10 +11,20 @@ public class Calculator {
         char operation = scanner.next().charAt(0);
 
         System.out.print("Enter the first number: ");
-        double num1 = scanner.nextDouble();
+        double num1 = 0;
+        try {
+            num1 = Double.parseDouble(scanner.next());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid number input.");
+        }
 
         System.out.print("Enter the second number: ");
-        double num2 = scanner.nextDouble();
+        double num2 = 0;
+        try {
+            num2 = Double.parseDouble(scanner.next());
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid number input.");
+        }
 
         double result = 0;
 
