@@ -20,11 +20,13 @@ public class Calculator {
 
         switch (operation) {
             case '+':
-                result = num1 + num2;
+            	Addition add = new Addition(num1, num2);
+            	result = add.add(num1, num2);
                 System.out.println("Result: " + result);
                 break;
             case '-':
-                result = num1 - num2;
+            	Subtraction minus = new Subtraction(num1, num2);
+            	result = minus.minus(num1, num2);
                 System.out.println("Result: " + result);
                 break;
             default:
